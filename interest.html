@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Interest - Google Cloud Community Day Bhopal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ccd-blue: #4285F4;
+            --ccd-text-primary: #202124;
+            --ccd-bg-light: #FFFFFF;
+            --ccd-bg-alt: #F8F9FA;
+        }
+        body {
+            font-family: 'Google Sans', 'Roboto', sans-serif;
+            background-color: var(--ccd-bg-alt);
+            color: var(--ccd-text-primary);
+        }
+        .headline-1 { font-size: 3.5rem; line-height: 1.2; font-weight: 700; }
+        .title { font-size: 1.25rem; line-height: 1.75rem; font-weight: 500; }
+        .btn-primary {
+            background-color: var(--ccd-blue);
+            color: white;
+            transition: all .2s ease-in-out;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3), 0 1px 3px 1px rgba(66, 133, 244, 0.15);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 4px 8px 0 rgba(66, 133, 244, 0.4), 0 2px 6px 2px rgba(66, 133, 244, 0.15);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSpF7PeX4wQFmGLm3ogwbehsU_Fav5rzLlfg&s" alt="Google Cloud Logo" class="h-6 w-6">
+                <span class="text-xl font-bold text-gray-700">
+                     <span class="text-gray-900">GDG Cloud</span> Bhopal
+                </span>
+            </a>
+            <a href="index.html" class="btn-primary text-sm font-medium px-6 py-3">Back to Home</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bg-white">
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="headline-1">Show Your Interest</h1>
+                    <p class="title mt-6 text-gray-600">Tickets aren't available just yet, but you can sign up to be notified! Fill out the form below, and we'll email you as soon as registration opens.</p>
+                </div>
+
+                <div class="mt-12 max-w-3xl mx-auto">
+                    <!-- Your Google Form is Embedded Here -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXNKSczOcYE0Rq-4LVLJW8khGlhB__lXfCy9woct90ljL68w/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t border-gray-200">
+        <div class="container mx-auto px-6 py-12 text-center">
+             <p class="text-xs text-gray-500">Made with ❤️ by GDG Cloud Bhopal</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
