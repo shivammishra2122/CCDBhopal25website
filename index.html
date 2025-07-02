@@ -297,79 +297,95 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero-section text-center py-24 md:py-40 relative section-decoration gradient-bg">
-             <div class="hero-graphics" aria-hidden="true">
-                <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+        <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-10">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <filter id="blur-filter">
-                            <feGaussianBlur stdDeviation="30" />
-                        </filter>
+                        <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" stroke-width="1"/>
+                        </pattern>
                     </defs>
-                    <g filter="url(#blur-filter)" opacity="0.2">
-                        <circle cx="10%" cy="30%" r="120" fill="#ffffff" />
-                        <circle cx="85%" cy="55%" r="150" fill="#ffffff" />
-                        <circle cx="40%" cy="80%" r="100" fill="#ffffff" />
-                        <rect x="20%" y="60%" width="200" height="200" fill="#ffffff" transform="rotate(30, 20%, 60%)" />
-                    </g>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
                 </svg>
             </div>
-            <div class="container mx-auto px-6 relative z-10">
-                <h1 id="hero-title" class="headline-1 max-w-4xl mx-auto mt-4 text-white slide-in-left"></h1>
-                <p id="hero-subtitle" class="title mt-6 max-w-3xl mx-auto text-white opacity-90 slide-in-right"></p>
-                <div class="mt-8">
-                     <p id="hero-event-details" class="font-medium text-white opacity-80 fade-in-up"></p>
+            
+            <!-- Floating elements -->
+            <div class="absolute inset-0 pointer-events-none">
+                <div class="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-xl float"></div>
+                <div class="absolute top-40 right-20 w-24 h-24 bg-yellow-300/10 rounded-full blur-lg float" style="animation-delay: -2s;"></div>
+                <div class="absolute bottom-20 left-1/4 w-20 h-20 bg-green-400/10 rounded-full blur-lg float" style="animation-delay: -4s;"></div>
+            </div>
+            
+            <!-- Hero Content -->
+            <div class="relative z-10 container mx-auto px-6 py-24 md:py-40">
+                <div class="text-center">
+                    <img src="https://developers.google.com/_static/images/lockup-color.png" alt="Google Developers" class="h-12 mx-auto mb-8 opacity-90">
+                    <h1 id="hero-title" class="text-5xl md:text-7xl font-bold mb-6 leading-tight slide-in-left"></h1>
+                    <p id="hero-subtitle" class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-blue-100 slide-in-right"></p>
+                    <div class="mt-8">
+                        <p id="hero-event-details" class="font-medium text-white opacity-80 fade-in-up mb-8"></p>
+                    </div>
+                    <a id="hero-cta" href="registration.html" class="inline-block mt-8 bg-white text-blue-600 button-label px-12 py-4 text-base font-bold rounded-lg hover:bg-gray-50 transition-all pulse-hover float">Register Interest</a>
                 </div>
-                <a id="hero-cta" href="registration.html" class="inline-block mt-8 bg-white text-blue-600 button-label px-12 py-4 text-base font-bold rounded-lg hover:bg-gray-50 transition-all pulse-hover float">Register Interest</a>
             </div>
         </section>
 
         <!-- About GDG Program Section -->
-        <section id="about" class="py-24 section-bg section-decoration">
+        <section id="about" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6">
-                <div class="text-center">
-                    <h2 id="about-title" class="headline-2 mb-6 gradient-text"></h2>
-                    <div class="max-w-4xl mx-auto">
-                        <div class="grid md:grid-cols-3 gap-8 mb-8">
-                            <div class="text-center fade-in-up">
-                                <div class="icon-circle">
-                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.168 18.477 18.582 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                                    </svg>
-                                </div>
-                                <h3 class="title gradient-text mb-2">Learn</h3>
-                                <p class="body-2 text-gray-600">Master cutting-edge Google Cloud technologies</p>
-                            </div>
-                            <div class="text-center fade-in-up" style="animation-delay: 0.2s">
-                                <div class="icon-circle-alt icon-circle">
-                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                    </svg>
-                                </div>
-                                <h3 class="title gradient-text-alt mb-2">Connect</h3>
-                                <p class="body-2 text-gray-600">Network with industry experts and peers</p>
-                            </div>
-                            <div class="text-center fade-in-up" style="animation-delay: 0.4s">
-                                <div class="icon-circle">
-                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                    </svg>
-                                </div>
-                                <h3 class="title gradient-text mb-2">Grow</h3>
-                                <p class="body-2 text-gray-600">Advance your career in cloud computing</p>
-                            </div>
+                <div class="text-center mb-16">
+                    <h2 id="about-title" class="text-3xl font-bold text-gray-800 mb-4"></h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">Join India's premier cloud community event for developers, architects, and technology enthusiasts</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="feature-card text-center p-8 fade-in-up">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
                         </div>
-                        <p id="about-p1" class="body-1 mb-4"></p>
-                        <p id="about-p2" class="body-1"></p>
+                        <h3 class="text-xl font-semibold text-blue-600 mb-4">Learn</h3>
+                        <p class="text-gray-600">Master cutting-edge Google Cloud technologies through expert-led sessions and hands-on workshops</p>
                     </div>
+                    
+                    <div class="feature-card text-center p-8 fade-in-up" style="animation-delay: 0.2s">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-600 mb-4">Connect</h3>
+                        <p class="text-gray-600">Network with industry experts, cloud engineers, and like-minded developers from across India</p>
+                    </div>
+                    
+                    <div class="feature-card text-center p-8 fade-in-up" style="animation-delay: 0.4s">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-purple-600 mb-4">Grow</h3>
+                        <p class="text-gray-600">Advance your career in cloud computing with real-world insights and industry best practices</p>
+                    </div>
+                </div>
+                
+                <div class="max-w-4xl mx-auto text-center">
+                    <p id="about-p1" class="text-lg text-gray-600 mb-4"></p>
+                    <p id="about-p2" class="text-lg text-gray-600"></p>
                 </div>
             </div>
         </section>
 
         <!-- Speakers Section -->
-        <section id="speakers" class="py-24 section-decoration">
+        <section id="speakers" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 id="speakers-title" class="headline-2 text-center mb-16 gradient-text"></h2>
-                <div id="speakers-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+                <div class="text-center mb-16">
+                    <h2 id="speakers-title" class="text-3xl font-bold text-gray-800 mb-4"></h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Learn from industry experts and Google Developer Experts who are shaping the future of cloud technology</p>
+                </div>
+                <div id="speakers-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <!-- Dynamic Speaker Cards -->
                 </div>
                 <div class="text-center mt-12">
@@ -446,39 +462,32 @@
                 </div>
             </div>
         </section>
+
+        <!-- Stay Connected Section -->
+        <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-2xl font-bold mb-4">Keep in touch with GDG Cloud Bhopal</h3>
+                <p class="mb-8 text-blue-100 text-lg">Stake out #CCDBhopal for the latest updates and news</p>
+                <div class="flex justify-center gap-6 mb-6">
+                    <a href="https://twitter.com/gdgcloudbhopal" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/gdgcloudbhopal/" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.987 11.988 11.987s11.987-5.369 11.987-11.987C24.014 5.367 18.635.001 12.017.001zm5.568 16.15c-.116 1.261-.73 1.875-1.991 1.991-1.739.16-6.991.16-8.73 0-1.261-.116-1.875-.73-1.991-1.991-.16-1.739-.16-6.991 0-8.73.116-1.261.73-1.875 1.991-1.991 1.739-.16 6.991-.16 8.73 0 1.261.116 1.875.73 1.991 1.991.16 1.739.16 6.991 0 8.73z"/><path d="M12.017 5.837A6.163 6.163 0 005.85 12.001a6.163 6.163 0 006.167 6.163 6.163 6.163 0 006.166-6.163 6.163 6.163 0 00-6.166-6.164zm0 10.163a4.001 4.001 0 01-4-4.001c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4.001-4 4.001z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/gdg-cloud-bhopal/" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+                <p class="text-sm text-blue-200">#CCDBhopal</p>
+            </div>
+        </section>
     </main>
     
     <!-- Footer -->
     <footer class="bg-gray-100 border-t border-gray-200">
-        <div class="container mx-auto px-6 py-16">
-            <div class="grid lg:grid-cols-4 gap-8">
-                <div class="lg:col-span-1">
-                    <a href="https://gdg.community.dev/gdg-cloud-bhopal/" target="_blank" class="text-2xl font-bold">
-                        <span class="text-gray-800">GDG Cloud</span><br><span class="font-light text-gray-500">Bhopal</span>
-                    </a>
-                </div>
-                <div class="lg:col-span-1">
-                    <h4 class="font-semibold text-gray-800 mb-4">Quick Links</h4>
-                    <ul id="footer-quick-links" class="space-y-3">
-                       <!-- Dynamic Quick Links -->
-                    </ul>
-                </div>
-                <div class="lg:col-span-1">
-                    <h4 class="font-semibold text-gray-800 mb-4">Community</h4>
-                    <ul id="footer-community-links" class="space-y-3">
-                        <!-- Dynamic Community Links -->
-                    </ul>
-                </div>
-                 <div class="lg:col-span-1">
-                    <h4 class="font-semibold text-gray-800 mb-4">Follow Us</h4>
-                    <div id="footer-socials" class="flex space-x-4">
-                        <!-- Dynamic Social Links -->
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-200 pt-8 text-center">
-                 <p id="footer-copyright" class="text-xs text-gray-500"></p>
-            </div>
+        <div class="container mx-auto px-6 py-12 text-center">
+             <p class="text-xs text-gray-500">Made with ❤️ by GDG Cloud Bhopal</p>
         </div>
     </footer>
 
@@ -521,12 +530,25 @@
             document.getElementById('speakers-title').textContent = data.speakers.title;
             const speakersGrid = document.getElementById('speakers-grid');
             data.speakers.list.forEach((speaker, index) => {
-                const cardClass = index % 2 === 0 ? 'card-colorful' : 'card-accent';
                 speakersGrid.innerHTML += `
-                    <div class="card ${cardClass} p-6 text-center fade-in-up max-w-sm" style="animation-delay: ${index * 0.1}s">
-                        <img src="${speaker.imageUrl}" alt="Speaker" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg">
-                        <h3 class="title">Speaker</h3>
-                        <p class="body-2" style="color: var(--ccd-text-secondary);">${speaker.title}</p>
+                    <div class="feature-card p-6 text-center fade-in-up max-w-sm" style="animation-delay: ${index * 0.1}s">
+                        <img src="${speaker.imageUrl}" alt="${speaker.name}" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-blue-100">
+                        <h3 class="text-lg font-bold text-gray-800 mb-1">${speaker.name}</h3>
+                        <p class="text-blue-600 font-medium text-sm mb-1">${speaker.title}</p>
+                        <p class="text-gray-500 text-xs mb-3">${speaker.company}</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">${speaker.bio}</p>
+                        <div class="flex justify-center gap-3">
+                            ${speaker.linkedin ? `<a href="${speaker.linkedin}" target="_blank" class="text-blue-600 hover:text-blue-800 transition-colors">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>` : ''}
+                            ${speaker.twitter ? `<a href="${speaker.twitter}" target="_blank" class="text-blue-400 hover:text-blue-600 transition-colors">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>` : ''}
+                        </div>
                     </div>`;
             });
 

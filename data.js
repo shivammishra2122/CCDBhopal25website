@@ -44,20 +44,13 @@ const websiteData = {
     "title": "Meet The Experts",
     "list": [
       {
-        "title": "Title, Company",
-        "imageUrl": "https://placehold.co/200x200/F8F9FA/5F6368?text=Expert"
-      },
-      {
-        "title": "Title, Company",
-        "imageUrl": "https://placehold.co/200x200/F8F9FA/5F6368?text=Expert"
-      },
-      {
-        "title": "Title, Company",
-        "imageUrl": "https://placehold.co/200x200/F8F9FA/5F6368?text=Expert"
-      },
-      {
-        "title": "Title, Company",
-        "imageUrl": "https://placehold.co/200x200/F8F9FA/5F6368?text=Expert"
+        "name": "Coming Soon",
+        "title": "Coming Soon",
+        "company": "Coming Soon",
+        "bio": "Coming Soon",
+        "imageUrl": "",
+        "linkedin": "#",
+        "twitter": "#"
       }
     ]
   },
