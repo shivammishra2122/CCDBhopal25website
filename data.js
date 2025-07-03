@@ -5,7 +5,7 @@
 const websiteData = {
   "event": {
     "name": "Cloud Community Day Bhopal 2025",
-    "date": "August 2, 2025",
+    "date": "August 3, 2025",
     "venue": "TBD, Bhopal",
     "venueAddress": "Shymala Hills, Jahangirabad, Bhopal, Madhya Pradesh 462002",
     "venueMapUrl": "https://www.google.com/maps/dir/?api=1&destination=Minto+Hall+Bhopal"
