@@ -26,6 +26,7 @@ const websiteData = {
     { "text": "Home", "url": "index.html" },
     { "text": "About", "url": "index.html#about" },
     { "text": "Speakers", "url": "index.html#speakers" },
+    { "text": "Venue", "url": "venue.html" },
     { "text": "Past Events", "url": "index.html#past-events" },
     { "text": "FAQ", "url": "index.html#faq" },
     { "text": "Organizers", "url": "index.html#organizers" },

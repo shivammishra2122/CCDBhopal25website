@@ -308,9 +308,9 @@
         <!-- Hero Section -->
         <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden">
             <!-- Minto Hall Background Image -->
-            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50" style="background-image: url('https://content.jdmagicbox.com/comp/bhopal/d5/pwfl1557378275v6u8d5/catalogue/minto-hall-bhopal-vicezh244l.jpg'); filter: contrast(1.15) saturate(1.2);"></div>
-            <!-- Gold/Blue Gradient Overlay for Venue Harmony -->
-            <div class="absolute inset-0" style="background: linear-gradient(120deg, rgba(34,40,49,0.82) 60%, rgba(251,188,4,0.32) 100%); mix-blend-mode: multiply;"></div>
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60" style="background-image: url('https://content.jdmagicbox.com/comp/bhopal/d5/pwfl1557378275v6u8d5/catalogue/minto-hall-bhopal-vicezh244l.jpg'); filter: contrast(1.15) saturate(1.2);"></div>
+            <!-- Gold/Blue Gradient Overlay for Venue Harmony (increased opacity for readability) -->
+            <div class="absolute inset-0" style="background: linear-gradient(120deg, rgba(34,40,49,0.93) 70%, rgba(251,188,4,0.22) 100%); mix-blend-mode: multiply;"></div>
             
             <!-- Background Pattern -->
             <div class="absolute inset-0 opacity-10">
@@ -336,10 +336,44 @@
                 <div class="text-center">
                     <h1 id="hero-title" class="text-5xl md:text-7xl font-bold mb-6 leading-tight slide-in-left"></h1>
                     <p id="hero-subtitle" class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-blue-100 slide-in-right"></p>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto text-white/90 mb-6 fade-in-up"><strong>Cloud Community Days Bhopal</strong> is Central India's premier event for cloud professionals, developers, and technology enthusiasts. Join us in Bhopal for a day of learning, networking, and innovation with the global cloud community.</p>
                     <div class="mt-8">
                         <p id="hero-event-details" class="font-medium text-white opacity-80 fade-in-up mb-8"></p>
                     </div>
                     <a id="hero-cta" href="tickets.html" class="inline-block mt-8 bg-white text-blue-600 button-label px-12 py-4 text-base font-bold rounded-lg hover:bg-gray-50 transition-all pulse-hover float">Get Tickets</a>
+    <!-- Event Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Cloud Community Days Bhopal 2025",
+      "startDate": "2025-08-03",
+      "endDate": "2025-08-03",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Minto Hall",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Shymala Hills, Jahangirabad",
+          "addressLocality": "Bhopal",
+          "addressRegion": "MP",
+          "postalCode": "462002",
+          "addressCountry": "IN"
+        }
+      },
+      "image": [
+        "https://content.jdmagicbox.com/comp/bhopal/d5/pwfl1557378275v6u8d5/catalogue/minto-hall-bhopal-vicezh244l.jpg"
+      ],
+      "description": "Cloud Community Days Bhopal 2025 brings together cloud professionals, developers, and enthusiasts for a day of learning, networking, and innovation.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "GDG Cloud Bhopal",
+        "url": "https://gdgcloudbhopal.com"
+      }
+    }
+    </script>
                 </div>
             </div>
         </section>
