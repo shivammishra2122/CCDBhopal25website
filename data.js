@@ -6,7 +6,7 @@ const websiteData = {
   "event": {
     "name": "Cloud Community Day Bhopal 2025",
     "date": "August 3, 2025",
-    "venue": "TBD, Bhopal",
+    "venue": "Minto Hall, Bhopal",
     "venueAddress": "Shymala Hills, Jahangirabad, Bhopal, Madhya Pradesh 462002",
     "venueMapUrl": "https://www.google.com/maps/dir/?api=1&destination=Minto+Hall+Bhopal"
   },
@@ -36,9 +36,9 @@ const websiteData = {
     "subtitle": "Join India's top cloud engineers, developers, and architects for a full day of learning, networking, and innovation with Google Cloud technologies."
   },
   "about": {
-    "title": "Learn. Connect. Grow.",
-    "paragraph1": "Google Cloud Community Days are community-led events designed to empower developers to learn and grow with Google Cloud. We bring together industry experts, Google Developer Experts (GDEs), and passionate community members to share knowledge, get hands-on experience with the latest cloud technologies, and prepare for industry-leading certifications.",
-    "paragraph2": "This isn't just a conference; it's a celebration of the cloud community. Whether you're a seasoned professional or just starting your cloud journey, you'll find valuable sessions, workshops, and networking opportunities."
+    "title": "Why Attend?",
+    "paragraph1": "Experience a day of innovation, learning, and networking with the Google Cloud community. Connect with passionate developers, industry leaders, and cloud experts through inspiring talks and hands-on workshops.",
+    "paragraph2": "No matter your experience level, you'll find practical sessions, real-world insights, and a welcoming community to help you grow. Join us to build new skills, make valuable connections, and be part of something bigger."
   },
   "speakers": {
     "title": "Meet The Experts",
