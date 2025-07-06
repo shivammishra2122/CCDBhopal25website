@@ -17,7 +17,7 @@ const websiteData = {
       "text": "GDG Cloud Bhopal"
     },
     "mainCta": {
-      "text": "Register Interest",
+      "text": "Tickets",
       "url": "tickets.html"
     },
     "chapterPageUrl": "https://gdg.community.dev/gdg-cloud-bhopal/"
