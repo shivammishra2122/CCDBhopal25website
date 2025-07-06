@@ -29,7 +29,8 @@ const websiteData = {
     { "text": "Past Events", "url": "index.html#past-events" },
     { "text": "FAQ", "url": "index.html#faq" },
     { "text": "Organizers", "url": "index.html#organizers" },
-    { "text": "Call for Speakers", "url": "call-for-speakers.html" }
+    { "text": "Call for Speakers", "url": "call-for-speakers.html" },
+    { "text": "Call for Sponsors", "url": "call-for-sponsors.html" }
   ],
   "hero": {
     "title": "Cloud Community Day Bhopal 2025",
