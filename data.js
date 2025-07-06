@@ -13,7 +13,7 @@ const websiteData = {
   "site": {
     "title": "Google Cloud Community Day Bhopal",
     "logo": {
-      "light": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSpF7PeX4wQFmGLm3ogwbehsU_Fav5rzLlfg&s",
+      "light": "logo.png",
       "text": "GDG Cloud Bhopal"
     },
     "mainCta": {
