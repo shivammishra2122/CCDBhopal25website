@@ -18,7 +18,7 @@ const websiteData = {
     },
     "mainCta": {
       "text": "Register Interest",
-      "url": "registration.html"
+      "url": "tickets.html"
     },
     "chapterPageUrl": "https://gdg.community.dev/gdg-cloud-bhopal/"
   },
@@ -79,7 +79,7 @@ const websiteData = {
       },
       {
         "question": "Is there a cost to attend the event?",
-        "answer": "Most Google Cloud Community Days are free to attend. Please check the registration page for specific details about this event, as some special workshops may have a nominal fee."
+        "answer": "Most Google Cloud Community Days are free to attend. Please check the tickets page for specific details about this event, as some special workshops may have a nominal fee."
       }
     ]
   },
