@@ -50,7 +50,7 @@ const websiteData = {
         "title": "Coming Soon",
         "company": "Coming Soon",
         "bio": "Coming Soon",
-        "imageUrl": "",
+        "imageUrl": "https://2.gravatar.com/avatar/781518e3519e07fbdd10503b45b6d203f3fd92de8c9fffd58a4e099069cb3d79?size=512&d=initials",
         "linkedin": "#",
         "twitter": "#"
       }
