@@ -43,19 +43,48 @@ const websiteData = {
     "paragraph2": "No matter your experience level, you'll find practical sessions, real-world insights, and a welcoming community to help you grow. Join us to build new skills, make valuable connections, and be part of something bigger."
   },
   "speakers": {
-    "title": "Meet The Experts",
-    "list": [
-      {
-        "name": "Coming Soon",
-        "title": "Coming Soon",
-        "company": "Coming Soon",
-        "bio": "Coming Soon",
-        "imageUrl": "https://2.gravatar.com/avatar/781518e3519e07fbdd10503b45b6d203f3fd92de8c9fffd58a4e099069cb3d79?size=512&d=initials",
-        "linkedin": "#",
-        "twitter": "#"
-      }
-    ]
-  },
+  "title": "Meet The Experts",
+  "list": [
+    
+    {
+      "name": "Biswanath Giri",
+      "title": "Cloud and AI Principal Architect",
+      "company": "LTIMindtree",
+      "bio": "How to Secure AI Workload",
+      "imageUrl": "Speakers/Biswanath Giri.JPG", // Replace with real photo if available
+      "linkedin": "https://www.linkedin.com/in/bgirigcloud/",
+      "twitter": "https://x.com/bgiri_gcloud"
+    },
+    {
+      "name": "Anand Mehta",
+      "title": "Senior FinOps Specialist",
+      "company": "Nasdaq",
+      "bio": "Cloud Intelligence Dashboard",
+      "imageUrl": "Speakers/Anand.jpg", // Replace with real photo if available
+      "linkedin": "https://www.linkedin.com/in/anandmehtafinops/",
+      "twitter": "#"
+    },
+    {
+      "name": "Ashish Kolarkar",
+      "title": "CEO",
+      "company": "Datatrack",
+      "bio": "NotebookLM to Conquer Complex Topics",
+      "imageUrl": "Speakers/Ashish kolarkar.jpg",
+      "linkedin": "https://www.linkedin.com/in/ashishkolarkar/",
+      "twitter": "https://x.com/AshishKola99658"
+    },
+    {
+      "name": "Saurabh Mishra",
+      "title": "DevOps Lead",
+      "company": "TSYS",
+      "bio": "Powering Proactive CX: Building Next-Gen Intelligent Self-Service with Gemini, Vertex AI Agent Builder & Cloud Native on Google Cloud",
+      "imageUrl": "Speakers/Saurabh Mishra.jpg",
+      "linkedin": "https://www.linkedin.com/in/connectsaurabhmishra/",
+      "twitter": "#"
+    }
+  ]
+},
+
   "pastEvents": {
     "title": "From Our Community Archives",
     "cta": {
