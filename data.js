@@ -51,7 +51,7 @@ const websiteData = {
       "title": "Cloud and AI Principal Architect",
       "company": "LTIMindtree",
       "bio": "How to Secure AI Workload",
-      "imageUrl": "Speakers/Biswanath Giri.JPG", // Replace with real photo if available
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D5603AQEdCPw1IHwDZA/profile-displayphoto-shrink_800_800/B56ZRHCXUUH0Ao-/0/1736358591030?e=1757548800&v=beta&t=SFXduak0kxF5RACXWSfl2UDyXER0V0iTsQ2QA8daxC8",
       "linkedin": "https://www.linkedin.com/in/bgirigcloud/",
       "twitter": "https://x.com/bgiri_gcloud"
     },
@@ -60,7 +60,7 @@ const websiteData = {
       "title": "Senior FinOps Specialist",
       "company": "Nasdaq",
       "bio": "Cloud Intelligence Dashboard",
-      "imageUrl": "Speakers/Anand.jpg", // Replace with real photo if available
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEl1j-wUU_Ikg/profile-displayphoto-shrink_800_800/B4DZSWQC04GkAc-/0/1737687586835?e=1757548800&v=beta&t=G6UMrgZ0boHPKdvaRZdMpXc_p9RlzlEaWMLdg3NHkjo",
       "linkedin": "https://www.linkedin.com/in/anandmehtafinops/",
       "twitter": "#"
     },
@@ -69,7 +69,7 @@ const websiteData = {
       "title": "CEO",
       "company": "Datatrack",
       "bio": "NotebookLM to Conquer Complex Topics",
-      "imageUrl": "Speakers/Ashish kolarkar.jpg",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4D03AQHzzLJevwA8hQ/profile-displayphoto-shrink_800_800/B4DZT0veZcHYAc-/0/1739272874303?e=1757548800&v=beta&t=3Br52t7QYHyWifJZb-tmKi4wDQakaeLKqdztN1VhUBo",
       "linkedin": "https://www.linkedin.com/in/ashishkolarkar/",
       "twitter": "https://x.com/AshishKola99658"
     },
@@ -78,7 +78,7 @@ const websiteData = {
       "title": "DevOps Lead",
       "company": "TSYS",
       "bio": "Powering Proactive CX: Building Next-Gen Intelligent Self-Service with Gemini, Vertex AI Agent Builder & Cloud Native on Google Cloud",
-      "imageUrl": "Speakers/Saurabh Mishra.jpg",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D5603AQFOtrDe3KEUVA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732168193011?e=1757548800&v=beta&t=BxU5-ksm-vXCpmVFiqSYe5aGritxiEFLXGZS_rrWchY",
       "linkedin": "https://www.linkedin.com/in/connectsaurabhmishra/",
       "twitter": "#"
     }

@@ -359,8 +359,8 @@
         const speakersGrid = document.getElementById('speakers-grid');
         data.speakers.list.forEach((speaker, index) => {
             speakersGrid.innerHTML += `
-                <div class="feature-card p-6 text-center fade-in-up max-w-sm" style="animation-delay: ${index * 0.1}s">
-                    <img src="${speaker.imageUrl}" alt="${speaker.name}" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-blue-100">
+                <div class="feature-card p-6 text-center fade-in-up w-full" style="animation-delay: ${index * 0.1}s">
+                    <img src="${speaker.imageUrl}" alt="${speaker.name}" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-100" style="object-position: center;">
                     <h3 class="text-lg font-bold text-gray-800 mb-1">${speaker.name}</h3>
                     <p class="text-blue-600 font-medium text-sm mb-1">${speaker.title}</p>
                     <p class="text-gray-500 text-xs mb-3">${speaker.company}</p>
