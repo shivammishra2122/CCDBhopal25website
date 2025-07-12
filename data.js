@@ -134,7 +134,7 @@ const websiteData = {
         "name": "Aditya Shah",
         "role": "GDG Organizer",
         "company": "Incsub LLC",
-        "profileUrl": "https://gdg.community.dev/u/m4fxta/",
+        "profileUrl": "https://www.linkedin.com/in/ethicaladitya/",
         "imageUrl": "https://2.gravatar.com/avatar/781518e3519e07fbdd10503b45b6d203f3fd92de8c9fffd58a4e099069cb3d79?size=512&d=initials"
       },
       {
