@@ -8,7 +8,7 @@ const websiteData = {
     "date": "August 3, 2025",
     "venue": "Minto Hall, Bhopal",
     "venueAddress": "Shymala Hills, Jahangirabad, Bhopal, Madhya Pradesh 462002",
-    "venueMapUrl": "https://www.google.com/maps/dir/?api=1&destination=Minto+Hall+Bhopal"
+    "venueMapUrl": "https://maps.app.goo.gl/gDC7pdqrb2o2hwdc7"
   },
   "site": {
     "title": "Google Cloud Community Day Bhopal",
@@ -77,7 +77,7 @@ const websiteData = {
       "name": "Saurabh Mishra",
       "title": "DevOps Lead",
       "company": "TSYS",
-      "bio": "Powering Proactive CX: Building Next-Gen Intelligent Self-Service with Gemini, Vertex AI Agent Builder & Cloud Native on Google Cloud",
+      "bio": "Building Next-Gen Intelligent Self-Service on Google Cloud",
       "imageUrl": "https://media.licdn.com/dms/image/v2/D5603AQFOtrDe3KEUVA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732168193011?e=1757548800&v=beta&t=BxU5-ksm-vXCpmVFiqSYe5aGritxiEFLXGZS_rrWchY",
       "linkedin": "https://www.linkedin.com/in/connectsaurabhmishra/",
       "twitter": "#"
