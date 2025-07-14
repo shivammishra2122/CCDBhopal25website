@@ -441,6 +441,32 @@
                     ${organizer.profileUrl !== '#' ? `<a href="${organizer.profileUrl}" target="_blank" class="inline-block mt-4 text-blue-600 font-medium hover:underline">View Profile</a>` : ''}
                 </div>`;
         });
+
+        // Community Partners Section (smaller logos, above organizers)
+        if (data.communityPartners && data.communityPartners.length > 0) {
+          const partnersSection = document.createElement('section');
+          partnersSection.id = 'community-partners';
+          partnersSection.className = 'py-10 bg-gray-50';
+          partnersSection.innerHTML = `
+            <div class="container mx-auto px-6">
+              <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Community Partners</h2>
+                <p class="text-base text-gray-600 max-w-2xl mx-auto">We thank our community partners for their support and collaboration.</p>
+              </div>
+              <div class="flex flex-wrap justify-center items-center gap-4 max-w-5xl mx-auto">
+                ${data.communityPartners.map(partner => `
+                  <a href="${partner.website}" target="_blank" rel="noopener" class="block p-2 bg-white rounded-xl shadow hover:shadow-lg transition-all border border-gray-100">
+                    <img src="${partner.logoUrl}" alt="${partner.name} Logo" class="h-10 w-auto object-contain mx-auto" style="max-width:80px;">
+                    <div class="mt-1 text-center text-gray-700 text-xs font-medium">${partner.name}</div>
+                  </a>
+                `).join('')}
+              </div>
+            </div>
+          `;
+          // Insert above the organizers section
+          const organizersSection = document.getElementById('organizers');
+          organizersSection.parentNode.insertBefore(partnersSection, organizersSection);
+        }
         
         // Populate Venue
         document.getElementById('venue-name').textContent = data.event.venue;

@@ -146,6 +146,23 @@ const websiteData = {
       }
     ]
   },
+  "communityPartners": [
+    {
+      "name": "GDG Cloud Indore",
+      "logoUrl": "https://gdgcloudindore.in/assets/img/logo.png",
+      "website": "https://gdgcloudindore.in/"
+    },
+    {
+      "name": "GDG Cloud Nagpur",
+      "logoUrl": "https://gdgcloudnagpur.com/assets/img/logo.png",
+      "website": "https://gdgcloudnagpur.com/"
+    },
+    {
+      "name": "GDG Cloud Pune",
+      "logoUrl": "https://gdgcloudpune.com/assets/img/logo.png",
+      "website": "https://gdgcloudpune.com/"
+    }
+  ],
   "footer": {
     "quickLinks": [
       { "text": "About", "url": "#about" },
