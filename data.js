@@ -29,7 +29,7 @@ const websiteData = {
     { "text": "Venue", "url": "venue.html" },
     { "text": "Past Events", "url": "index.html#past-events" },
     { "text": "FAQ", "url": "index.html#faq" },
-    { "text": "Organizers", "url": "index.html#organizers" },
+    { "text": "Team", "url": "team.html" },
     { "text": "Call for Speakers", "url": "call-for-speakers.html" },
     { "text": "Call for Sponsors", "url": "call-for-sponsors.html" }
   ],
@@ -127,25 +127,6 @@ const websiteData = {
       "link": { "text": "Learn more", "url": "#" }
     }
   },
-  "organizers": {
-    "title": "Meet Our Organizers",
-    "list": [
-      {
-        "name": "Aditya Shah",
-        "role": "GDG Organizer",
-        "company": "Incsub LLC",
-        "profileUrl": "https://www.linkedin.com/in/ethicaladitya/",
-        "imageUrl": "https://2.gravatar.com/avatar/781518e3519e07fbdd10503b45b6d203f3fd92de8c9fffd58a4e099069cb3d79?size=512&d=initials"
-      },
-      {
-        "name": "Mayur",
-        "role": "Co-Organizer",
-        "company": "Capgemini",
-        "profileUrl": "https://www.linkedin.com/in/mayurrathi26/",
-        "imageUrl": "https://pbs.twimg.com/profile_images/1378894474718351362/vuLAZU4a_400x400.jpg"
-      }
-    ]
-  },
   "communityPartners": [
     {
       "name": "GDG Cloud Indore",
@@ -167,7 +148,7 @@ const websiteData = {
     "quickLinks": [
       { "text": "About", "url": "#about" },
       { "text": "Speakers", "url": "#speakers" },
-      { "text": "Organizers", "url": "#organizers" },
+      { "text": "Team", "url": "team.html" },
       { "text": "FAQ", "url": "#faq" }
     ],
     "communityLinks": [
@@ -187,5 +168,57 @@ const websiteData = {
     "formUrl": "https://forms.gle/aMPhYFLVzr2rsfAf9",
     "deadline": "July 15, 2025",
     "notification": "July 20, 2025"
+  },
+  "team": {
+    "organizers": [
+      {
+        "name": "Aditya Shah",
+        "role": "GDG Organizer & Lead",
+        "company": "Incsub LLC",
+        "bio": "Passionate about building inclusive tech communities and empowering developers with cloud technologies.",
+        "profileUrl": "https://www.linkedin.com/in/ethicaladitya/",
+        "imageUrl": "https://2.gravatar.com/avatar/781518e3519e07fbdd10503b45b6d203f3fd92de8c9fffd58a4e099069cb3d79?size=512&d=initials",
+        "skills": ["Community Building", "Development Operations", "Developer Relations"]
+      },
+      {
+        "name": "Mayur Rathi",
+        "role": "Co-Organizer",
+        "company": "Capgemini",
+        "bio": "Experienced software engineer with a passion for cloud architecture and developer community engagement.",
+        "profileUrl": "https://www.linkedin.com/in/mayurrathi26/",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1378894474718351362/vuLAZU4a_400x400.jpg",
+        "skills": ["Cloud Architecture", "DevOps", "Team Leadership"]
+      }
+    ],
+    "volunteers": [
+      {
+        "name": "Arjun Patel",
+        "role": "Registration & Check-in",
+        "company": "Student",
+        "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "linkedinUrl": "https://www.linkedin.com/in/arjunpatel/"
+      },
+      {
+        "name": "Sneha Jain",
+        "role": "Photography",
+        "company": "Designer",
+        "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "linkedinUrl": "https://www.linkedin.com/in/snehajain/"
+      },
+      {
+        "name": "Vikram Singh",
+        "role": "Logistics",
+        "company": "TCS",
+        "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "linkedinUrl": "https://www.linkedin.com/in/vikramsingh/"
+      },
+      {
+        "name": "Ritu Agarwal",
+        "role": "Social Media",
+        "company": "Student",
+        "imageUrl": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "linkedinUrl": "https://www.linkedin.com/in/rituagarwal/"
+      }
+    ]
   }
 };

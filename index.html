@@ -228,16 +228,6 @@
             </div>
         </section>
 
-        <!-- Organizers Section -->
-        <section id="organizers" class="py-24 section-decoration">
-            <div class="container mx-auto px-6">
-                <h2 id="organizers-title" class="headline-2 text-center mb-16 gradient-text"></h2>
-                <div id="organizers-grid" class="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
-                    <!-- Dynamic Organizer Cards -->
-                </div>
-            </div>
-        </section>
-
         <!-- Venue Section -->
         <section id="venue" class="py-24 section-bg">
             <div class="container mx-auto px-6">
@@ -427,22 +417,7 @@
         guidelinesLink.href = data.conduct.communityGuidelines.link.url;
         guidelinesLink.textContent = data.conduct.communityGuidelines.link.text;
         
-        // Populate Organizers
-        document.getElementById('organizers-title').textContent = data.organizers.title;
-        const organizersGrid = document.getElementById('organizers-grid');
-        data.organizers.list.forEach((organizer, index) => {
-            const gradientClass = index % 2 === 0 ? 'card-colorful' : 'card-accent';
-            organizersGrid.innerHTML += `
-                <div class="card ${gradientClass} p-8 text-center fade-in-up max-w-sm" style="animation-delay: ${index * 0.2}s">
-                    <img src="${organizer.imageUrl}" alt="${organizer.name}" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg">
-                    <h3 class="title gradient-text">${organizer.name}</h3>
-                    <p class="body-2 text-blue-600 font-medium">${organizer.role}</p>
-                    ${organizer.company ? `<p class="body-2 text-gray-500 mt-1">${organizer.company}</p>` : ''}
-                    ${organizer.profileUrl !== '#' ? `<a href="${organizer.profileUrl}" target="_blank" class="inline-block mt-4 text-blue-600 font-medium hover:underline">View Profile</a>` : ''}
-                </div>`;
-        });
-
-        // Community Partners Section (smaller logos, above organizers)
+        // Community Partners Section (smaller logos, above venue section)
         if (data.communityPartners && data.communityPartners.length > 0) {
           const partnersSection = document.createElement('section');
           partnersSection.id = 'community-partners';
@@ -463,9 +438,9 @@
               </div>
             </div>
           `;
-          // Insert above the organizers section
-          const organizersSection = document.getElementById('organizers');
-          organizersSection.parentNode.insertBefore(partnersSection, organizersSection);
+          // Insert above the venue section
+          const venueSection = document.getElementById('venue');
+          venueSection.parentNode.insertBefore(partnersSection, venueSection);
         }
         
         // Populate Venue
