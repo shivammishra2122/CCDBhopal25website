@@ -372,10 +372,65 @@
             // Populate Navigation with enhanced styling
             const navLinksContainer = document.getElementById('nav-links');
             const mobileNavLinksContainer = document.getElementById('mobile-nav-links');
-            data.navigation.forEach(link => {
-                const linkHtml = `<a href="${link.url}" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">${link.text}</a>`;
-                navLinksContainer.innerHTML += linkHtml;
-                mobileNavLinksContainer.innerHTML += `<a href="${link.url}" class="mobile-nav-link block text-sm font-medium text-gray-600 hover:text-blue-600 py-2">${link.text}</a>`;
+            
+            data.navigation.forEach(item => {
+                if (item.submenu) {
+                    // Desktop dropdown menu
+                    const dropdownHtml = `
+                        <div class="relative group">
+                            <button class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600 flex items-center">
+                                ${item.text}
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="py-2">
+                                    ${item.submenu.map(subitem => `
+                                        <a href="${subitem.url}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">${subitem.text}</a>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    navLinksContainer.innerHTML += dropdownHtml;
+                    
+                    // Mobile submenu
+                    const mobileDropdownHtml = `
+                        <div class="mobile-dropdown">
+                            <button class="mobile-nav-link block text-sm font-medium text-gray-600 hover:text-blue-600 py-2 w-full text-left flex items-center justify-between mobile-dropdown-btn">
+                                ${item.text}
+                                <svg class="w-4 h-4 transition-transform mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="mobile-dropdown-content hidden pl-4 pb-2">
+                                ${item.submenu.map(subitem => `
+                                    <a href="${subitem.url}" class="block text-sm text-gray-600 hover:text-blue-600 py-2">${subitem.text}</a>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                    mobileNavLinksContainer.innerHTML += mobileDropdownHtml;
+                } else {
+                    // Regular menu item
+                    const linkHtml = `<a href="${item.url}" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">${item.text}</a>`;
+                    navLinksContainer.innerHTML += linkHtml;
+                    mobileNavLinksContainer.innerHTML += `<a href="${item.url}" class="mobile-nav-link block text-sm font-medium text-gray-600 hover:text-blue-600 py-2">${item.text}</a>`;
+                }
+            });
+            
+            // Mobile dropdown functionality
+            document.querySelectorAll('.mobile-dropdown-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const dropdown = btn.parentElement;
+                    const content = dropdown.querySelector('.mobile-dropdown-content');
+                    const icon = btn.querySelector('.mobile-dropdown-icon');
+                    
+                    content.classList.toggle('hidden');
+                    icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+                });
             });
             
             // Enhanced Mobile Menu Toggle

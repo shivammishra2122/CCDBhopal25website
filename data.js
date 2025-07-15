@@ -24,14 +24,25 @@ const websiteData = {
   },
   "navigation": [
     { "text": "Home", "url": "index.html" },
-    { "text": "About", "url": "index.html#about" },
-    { "text": "Speakers", "url": "index.html#speakers" },
+    { 
+      "text": "About", 
+      "submenu": [
+        { "text": "About Event", "url": "index.html#about" },
+        { "text": "Speakers", "url": "index.html#speakers" },
+        { "text": "Past Events", "url": "index.html#past-events" },
+        { "text": "FAQ", "url": "index.html#faq" }
+      ]
+    },
     { "text": "Venue", "url": "venue.html" },
-    { "text": "Past Events", "url": "index.html#past-events" },
-    { "text": "FAQ", "url": "index.html#faq" },
     { "text": "Team", "url": "team.html" },
-    { "text": "Call for Speakers", "url": "call-for-speakers.html" },
-    { "text": "Call for Sponsors", "url": "call-for-sponsors.html" }
+    { "text": "Tickets", "url": "tickets.html" },
+    { 
+      "text": "Participate", 
+      "submenu": [
+        { "text": "Call for Speakers", "url": "call-for-speakers.html" },
+        { "text": "Call for Sponsors", "url": "call-for-sponsors.html" }
+      ]
+    }
   ],
   "hero": {
     "title": "Cloud Community Day Bhopal 2025",
