@@ -206,7 +206,7 @@ const websiteData = {
         "skills": ["Cloud Architecture", "DevOps", "Team Leadership"]
       }
     ],
-    "volunteers": [
+    "coreTeam": [
       {
         "name": "Shashank Jain",
         "role": "Social Media",
@@ -216,7 +216,7 @@ const websiteData = {
       },
       {
         "name": "Shivam Mishra",
-        "role": "xyz",
+        "role": "Volunteer Lead",
         "company": "Sansys Informatics",
         "imageUrl": "https://media.licdn.com/dms/image/v2/D5603AQFhaTLZtcrk7A/profile-displayphoto-scale_400_400/B56Zed0qo.GQAo-/0/1750699521584?e=1758153600&v=beta&t=pPym-5m5LsXLJR7LlcgpXZXgyAdlhhZfbT7ceDB_OGI",
         "linkedinUrl": "https://www.linkedin.com/in/shivammishra-styx/"
