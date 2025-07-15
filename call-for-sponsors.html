@@ -70,34 +70,72 @@
 
   <!-- Sponsorship Slabs -->
   <section class="py-16 bg-gray-50" id="slabs">
-    <div class="container mx-auto px-6 max-w-4xl">
+    <div class="container mx-auto px-6 max-w-5xl">
       <h2 class="text-2xl md:text-3xl font-bold mb-8 text-blue-700 text-center">Sponsorship Packages</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white rounded-xl shadow p-8 border-t-4 border-yellow-400">
-          <h3 class="text-xl font-bold mb-2 text-yellow-600">Gold Sponsor – INR 25,000</h3>
-          <ul class="text-gray-700 text-base list-disc list-inside space-y-2 mb-2">
-            <li>Exclusive branding as <b>Gold Sponsor</b></li>
-            <li>Logo + description on our website (with 3 backlinks)</li>
-            <li>Prime visibility at the event – logo on slides, standees, hoardings</li>
-            <li>Exclusive social media shoutouts (pre, during, post)</li>
-            <li>Acknowledgement in opening/closing remarks</li>
-            <li>Standee placement at venue</li>
-            <li>Option to share a recorded message</li>
-            <li>Lunch for up to 2 representatives</li>
-          </ul>
+      
+      <!-- Premium Tier -->
+      <div class="mb-12">
+        <div class="bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl shadow-lg p-8 border-4 border-gray-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-gray-600 text-white px-4 py-2 rounded-bl-lg text-sm font-bold">PREMIUM</div>
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">Platinum Sponsor – INR 50,000</h3>
+          <p class="text-gray-700 mb-4 text-lg">Be the leading partner of Cloud Community Day Bhopal and maximize your brand exposure!</p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <ul class="text-gray-700 text-base list-disc list-inside space-y-2">
+              <li><strong>Exclusive branding as Platinum Sponsor</strong></li>
+              <li>Large logo placement on all event materials</li>
+              <li>Dedicated sponsor page on website (up to 3 backlinks)</li>
+              <li>4 complimentary event passes</li>
+              <li>Multiple social media mentions</li>
+              <li>Acknowledgment in opening/closing remarks</li>
+              <li>Logo on all email communications</li>
+            </ul>
+            <ul class="text-gray-700 text-base list-disc list-inside space-y-2">
+              <li>Standee placement at venue (up to 3)</li>
+              <li>Option to include swags in attendee kits</li>
+              <li>Static slide rotation during sessions</li>
+              <li>Video message displayed during event</li>
+              <li>Lunch for up to 4 representatives</li>
+              <li>Exclusive photo booth branding opportunity</li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <!-- Gold Tier -->
+      <div class="mb-12">
+        <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-2xl shadow-lg p-8 border-4 border-yellow-400 relative overflow-hidden max-w-4xl mx-auto">
+          <div class="absolute top-0 right-0 bg-yellow-500 text-white px-4 py-2 rounded-bl-lg text-sm font-bold">POPULAR</div>
+          <h3 class="text-2xl font-bold mb-4 text-yellow-700">Gold Sponsor – INR 25,000</h3>
+          <p class="text-gray-700 mb-4 text-lg">Perfect for growing companies looking to connect with the tech community!</p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <ul class="text-gray-700 text-base list-disc list-inside space-y-2">
+              <li><strong>Exclusive branding as Gold Sponsor</strong></li>
+              <li>Logo + description on Website</li>
+              <li>Acknowledgment in opening/closing remarks</li>
+              <li>Social media mentions (pre, during, post)</li>
+            </ul>
+            <ul class="text-gray-700 text-base list-disc list-inside space-y-2">
+              <li>2 complimentary event passes</li>
+              <li>Shared sponsors banner placement</li>
+              <li>Standee placement at venue</li>
+              <li>Lunch for up to 2 representatives</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bronze and In-Kind Tiers -->
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
         <div class="bg-white rounded-xl shadow p-8 border-t-4 border-gray-400">
           <h3 class="text-xl font-bold mb-2 text-gray-700">Bronze Sponsor – INR 12,000</h3>
           <ul class="text-gray-700 text-base list-disc list-inside space-y-2 mb-2">
             <li>Logo + description on our website (1 backlink)</li>
-            <li>Mention in a shared sponsor blog post</li>
+            <li>Mention in a shared sponsor post</li>
             <li>Shared visibility on slides, standees, banners</li>
             <li>Shared social media mentions</li>
             <li>Acknowledgement in opening/closing remarks</li>
           </ul>
         </div>
-      </div>
-      <div class="mt-12 grid md:grid-cols-2 gap-8">
         <div class="bg-white rounded-xl shadow p-8 border-t-4 border-green-400">
           <h3 class="text-xl font-bold mb-2 text-green-700">In-Kind Sponsor</h3>
           <ul class="text-gray-700 text-base list-disc list-inside space-y-2 mb-2">
@@ -144,8 +182,9 @@
           <div>
             <label class="block text-gray-700 font-medium mb-1">Sponsorship Level</label>
             <select name="level" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
-              <option value="Gold">Gold</option>
-              <option value="Bronze">Bronze</option>
+              <option value="Platinum">Platinum - INR 50,000</option>
+              <option value="Gold">Gold - INR 25,000</option>
+              <option value="Bronze">Bronze - INR 12,000</option>
               <option value="In-Kind">In-Kind</option>
             </select>
           </div>
