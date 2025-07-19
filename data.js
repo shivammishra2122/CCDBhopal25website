@@ -85,6 +85,51 @@ const websiteData = {
       "twitter": "https://x.com/AshishKola99658"
     },
     {
+      "name": "Kripesh Adwani",
+      "title": "CEO",
+      "company": "UpSkillAI",
+      "bio": "Mastering Google Gemini: Your All-in-One Career Co-Pilot",
+      "imageUrl": "https://kripesh.b-cdn.net/wp-content/uploads/2023/04/kripesh-adwani-stage.webp",
+      "linkedin": "https://www.linkedin.com/in/kripeshadwani/",
+      "twitter": "https://x.com/kripeshadwani"
+    },
+    {
+      "name": "Sumit Kumar",
+      "title": "Cloud Solution Architect",
+      "company": "66degrees",
+      "bio": "Protecting AI Agentic Application with Google Model Armor",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/C4E03AQHapqML7Atgww/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1640710112920?e=1755734400&v=beta&t=-_E5Wr3CGXQFi5k3yIeYu6G_VbPjD_1MepLjM8ghQWg",
+      "linkedin": "linkedin.com/in/sumit-kumar-ab2059132",
+      "twitter": "https://x.com/sumit75817441"
+    },
+    {
+      "name": "Parth Arora",
+      "title": "Senior Software Engineer",
+      "company": "IBM india",
+      "bio": "Kubernetes for Beginners: Your First Step into Cloud-Native",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/C4D03AQFCLl1RZ0fNUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1596654625055?e=1755734400&v=beta&t=LX70QKPGO5IejzZAihbc32WOx7u7yjVbaPWgZYFDrkI",
+      "linkedin": "https://www.linkedin.com/in/parth-arora-1449ab14a/",
+      "twitter": "https://x.com/ParthAr56924392"
+    },
+    {
+      "name": "Geeta Kakrani",
+      "title": "CEO, Founder",
+      "company": "Kanishka IT",
+      "bio": "From Pretrained to Powerful: Fine-Tune Gemma on GCP Vertex AI",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEx1d7zgV-iFw/profile-displayphoto-shrink_800_800/B4DZaP0DHJG8Ac-/0/1746169508796?e=1755734400&v=beta&t=moC9JN7t53wS8zLPDFoACMs42EWCMSArHsV8yDVxaJ0",
+      "linkedin": "https://www.linkedin.com/in/geetakakrani/",
+      "twitter": "https://x.com/kakranig"
+    },
+    {
+      "name": "Jyoti Mishra",
+      "title": "SDE-4",
+      "company": "Evertz Microsystems",
+      "bio": "No server, No stress: Build smart cloud workflows the low code way",
+      "imageUrl": "https://kripesh.b-cdn.net/wp-content/uploads/2023/04/kripesh-adwani-stage.webp",
+      "linkedin": "https://www.linkedin.com/in/kripeshadwani/",
+      "twitter": "https://www.x.com/jyoti_mi"
+    },
+    {
       "name": "Saurabh Mishra",
       "title": "DevOps Lead",
       "company": "TSYS",
