@@ -36,13 +36,7 @@ const websiteData = {
     { "text": "Venue", "url": "venue.html" },
     { "text": "Team", "url": "team.html" },
     { "text": "Tickets", "url": "tickets.html" },
-    { 
-      "text": "Participate", 
-      "submenu": [
-        { "text": "Call for Speakers", "url": "call-for-speakers.html" },
-        { "text": "Call for Sponsors", "url": "call-for-sponsors.html" }
-      ]
-    }
+    { "text": "Call for Sponsors", "url": "call-for-sponsors.html" }
   ],
   "hero": {
     "title": "Cloud Community Day Bhopal 2025",
@@ -125,8 +119,8 @@ const websiteData = {
       "title": "SDE-4",
       "company": "Evertz Microsystems",
       "bio": "No server, No stress: Build smart cloud workflows the low code way",
-      "imageUrl": "https://kripesh.b-cdn.net/wp-content/uploads/2023/04/kripesh-adwani-stage.webp",
-      "linkedin": "https://www.linkedin.com/in/kripeshadwani/",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4D03AQG7n008b-pnrw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732779040312?e=1755734400&v=beta&t=OCUXspmueeFOwJzeKlZh3JXtRWqTGtmhgoRm_BDvhZA",
+      "linkedin": "https://in.linkedin.com/in/jyotim29",
       "twitter": "https://www.x.com/jyoti_mi"
     },
     {
@@ -215,7 +209,6 @@ const websiteData = {
     "communityLinks": [
       { "text": "Code of Conduct", "url": "#conduct" },
       { "text": "Community Guidelines", "url": "#conduct" },
-      { "text": "Call for Speakers", "url": "call-for-speakers.html" },
       { "text": "Become a Member", "url": "https://gdg.community.dev/gdg-cloud-bhopal/" }
     ],
     "socials": [
@@ -224,11 +217,6 @@ const websiteData = {
         { "name": "Instagram", "url": "https://www.instagram.com/gdgcloudbhopal", "iconPath": "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" }
     ],
     "copyright": "Made with ❤️ by GDG Cloud Bhopal"
-  },
-  "callForSpeakers": {
-    "formUrl": "https://forms.gle/aMPhYFLVzr2rsfAf9",
-    "deadline": "July 15, 2025",
-    "notification": "July 20, 2025"
   },
   "team": {
     "organizers": [
