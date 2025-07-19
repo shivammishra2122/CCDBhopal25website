@@ -391,7 +391,10 @@
                         
                         <!-- KonfHub Widget Embed -->
                         <div class="loading bg-gray-50 rounded-2xl p-4">
-                            <iframe src="https://konfhub.com/widget/google-cloud-community-day-bhopal-2025?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10" id="konfhub-widget" title="Register for Google Cloud Community Day, Bhopal 2025" width="100%" height="500"></iframe>
+                            <!-- Mobile iframe (visible on small screens) -->
+                            <iframe src="https://konfhub.com/widget/google-cloud-community-day-bhopal-2025?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10" class="lg:hidden" title="Register for Google Cloud Community Day, Bhopal 2025" width="100%" height="1400"></iframe>
+                            <!-- Desktop iframe (visible on large screens) -->
+                            <iframe src="https://konfhub.com/widget/google-cloud-community-day-bhopal-2025?desc=false&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10" class="hidden lg:block" title="Register for Google Cloud Community Day, Bhopal 2025" width="100%" height="1000"></iframe>
                         </div>
                     </div>
                 </div>
