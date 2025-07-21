@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Partners - Google Cloud Community Day Bhopal 2025</title>
-    <meta name="description" content="Meet our amazing community partners who make Google Cloud Community Day Bhopal 2025 possible through their support and collaboration.">
-    <meta name="keywords" content="Community Partners, Google Cloud, Community Day, Bhopal, GDG, Partners, Collaboration">
-    <meta property="og:title" content="Community Partners - Google Cloud Community Day Bhopal 2025">
-    <meta property="og:description" content="Meet our amazing community partners who support Google Cloud Community Day Bhopal 2025.">
+    <title>Partners - Google Cloud Community Day Bhopal 2025</title>
+    <meta name="description" content="Meet our amazing partners who make Google Cloud Community Day Bhopal 2025 possible through their support and collaboration.">
+    <meta name="keywords" content="Partners, Google Cloud, Community Day, Bhopal, GDG, Collaboration">
+    <meta property="og:title" content="Partners - Google Cloud Community Day Bhopal 2025">
+    <meta property="og:description" content="Meet our amazing partners who support Google Cloud Community Day Bhopal 2025.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,19 +126,19 @@
                 </svg>
             </div>
             <div class="container mx-auto px-6 relative z-10 text-white">
-                <h1 class="headline-1 max-w-4xl mx-auto animate-fade-in-up">Community Partners</h1>
-                <p class="title mt-6 max-w-3xl mx-auto opacity-90 animate-fade-in-up stagger-1">Meet our amazing community partners who make Google Cloud Community Day Bhopal 2025 possible through their collaboration and support</p>
+                <h1 class="headline-1 max-w-4xl mx-auto animate-fade-in-up">Partners</h1>
+                <p class="title mt-6 max-w-3xl mx-auto opacity-90 animate-fade-in-up stagger-1">Meet our amazing partners who make Google Cloud Community Day Bhopal 2025 possible through their collaboration and support</p>
                 <div class="mt-8 animate-fade-in-up stagger-2">
                     <p class="font-medium opacity-90">Building Together • Growing Together • Succeeding Together</p>
                 </div>
             </div>
         </section>
 
-        <!-- Community Partners Section -->
+        <!-- Partners Section -->
         <section class="py-24">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="headline-2 mb-6">Our Community Partners</h2>
+                    <h2 class="headline-2 mb-6">Our Partners</h2>
                     <p class="body-1 max-w-3xl mx-auto">We're proud to work alongside these amazing communities and organizations.</p>
                 </div>
                 
@@ -173,7 +173,7 @@
                     <ul class="space-y-3">
                         <li><a href="index.html#conduct" class="text-gray-600 hover:text-blue-600">Code of Conduct</a></li>
                         <li><a href="https://gdg.community.dev/gdg-cloud-bhopal/" target="_blank" class="text-gray-600 hover:text-blue-600">Become a Member</a></li>
-                        <li><a href="community-partners.html" class="text-gray-600 hover:text-blue-600">Community Partners</a></li>
+                        <li><a href="partners.html" class="text-gray-600 hover:text-blue-600">Partners</a></li>
                     </ul>
                 </div>
                 <div class="lg:col-span-1">
@@ -322,7 +322,29 @@
             
             // Populate Community Partners
             const partnersContainer = document.getElementById('partners-container');
-            if (data.communityPartners && data.communityPartners.categories) {
+            if (data.communityPartners && data.communityPartners.length > 0) {
+                // Create a simple grid layout for the real partners
+                const partnersDiv = document.createElement('div');
+                partnersDiv.className = 'grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto';
+                
+                partnersDiv.innerHTML = data.communityPartners.map((partner, index) => `
+                    <div class="partner-card card p-6 text-center bg-white animate-fade-in-up stagger-${(index % 6) + 1}">
+                        <div class="mb-4">
+                            <img src="${partner.logoUrl}" alt="${partner.name} Logo" class="partner-logo mx-auto h-16 w-auto object-contain">
+                        </div>
+                        <h4 class="font-semibold mb-2 text-gray-800">${partner.name}</h4>
+                        <div class="flex justify-center">
+                            <a href="${partner.website}" class="social-link text-blue-600 hover:text-blue-800" target="_blank" rel="noopener">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                `).join('');
+                
+                partnersContainer.appendChild(partnersDiv);
+            } else if (data.communityPartners && data.communityPartners.categories) {
                 data.communityPartners.categories.forEach((category, categoryIndex) => {
                     const categoryDiv = document.createElement('div');
                     categoryDiv.className = 'mb-16';

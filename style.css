@@ -624,7 +624,7 @@ body {
 }
 
 /* Community Partners Section Styles */
-.community-partners-section {
+.partners-section {
     background: linear-gradient(90deg, var(--ccd-blue) 0%, var(--ccd-green) 100%);
     border-radius: 24px;
     box-shadow: 0 6px 32px rgba(66, 133, 244, 0.10);
@@ -633,29 +633,29 @@ body {
     position: relative;
     overflow: hidden;
 }
-.community-partners-section h2 {
+.partners-section h2 {
     color: #fff;
     letter-spacing: 0.5px;
     text-shadow: 0 2px 8px rgba(66,133,244,0.15);
 }
-.community-partners-section p {
+.partners-section p {
     color: #e3f2fd;
 }
-.community-partners-section .partner-card {
+.partners-section .partner-card {
     background: rgba(255,255,255,0.95);
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(52,168,83,0.08);
     border: 1px solid #e3f2fd;
     transition: box-shadow 0.2s, transform 0.2s;
 }
-.community-partners-section .partner-card:hover {
+.partners-section .partner-card:hover {
     box-shadow: 0 8px 32px rgba(66,133,244,0.18);
     transform: translateY(-2px) scale(1.04);
 }
-.community-partners-section .partner-card img {
+.partners-section .partner-card img {
     filter: none;
 }
-.community-partners-section .partner-card .partner-name {
+.partners-section .partner-card .partner-name {
     color: #4285F4;
     font-weight: 600;
 }

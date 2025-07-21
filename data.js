@@ -36,7 +36,7 @@ const websiteData = {
     { "text": "Venue", "url": "venue.html" },
     { "text": "Team", "url": "team.html" },
     { "text": "Tickets", "url": "tickets.html" },
-    { "text": "Community Partners", "url": "community-partners.html" },
+    { "text": "Partners", "url": "partners.html" },
     { "text": "Call for Sponsors", "url": "call-for-sponsors.html" }
   ],
   "hero": {
@@ -286,17 +286,17 @@ const websiteData = {
     ]
   },
   "communityPartners": {
-    "title": "Community Partners",
-    "subtitle": "Meet our amazing community partners who make Google Cloud Community Day Bhopal 2025 possible through their collaboration and support",
+    "title": "Partners",
+    "subtitle": "Meet our amazing partners who make Google Cloud Community Day Bhopal 2025 possible through their collaboration and support",
     "categories": [
       {
-        "name": "Tech Communities",
+        "name": "Community Partners",
         "partners": [
           {
-            "name": "Tech Community Partner",
-            "description": "Brief description of the community partner and their focus areas or mission.",
-            "logoUrl": "https://via.placeholder.com/150x80/4285F4/FFFFFF?text=Partner+Logo",
-            "websiteUrl": "#",
+            "name": "WordPress Bhopal",
+            "description": "The WordPress Bhopal community is dedicated to empowering developers, designers, and content creators with WordPress skills and knowledge.",
+            "logoUrl": "https://bhopal.wordcamp.org/2025/files/2025/05/Group-16.png",
+            "websiteUrl": "https://wpbhopal.org/",
             "socialMedia": {
               "twitter": "#",
               "linkedin": "#",
@@ -304,10 +304,10 @@ const websiteData = {
             }
           },
           {
-            "name": "Developer Community",
-            "description": "Another amazing community partner working to advance technology and innovation.",
-            "logoUrl": "https://via.placeholder.com/150x80/34A853/FFFFFF?text=Community+2",
-            "websiteUrl": "#",
+            "name": "ML Bhopal",
+            "description": "A vibrant community of machine learning enthusiasts, researchers, and practitioners fostering AI innovation in central India.",
+            "logoUrl": "https://json.commudle.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN3VvQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4ed2fc68ffea9fddb06fbb4c636b9663346c820b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFKQUFXa0NRQUU2QzJ4dllXUmxjbnNHT2dsd1lXZGxNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--e1b8c3103b542b9d7ba47b2862e0d51860fbef22/ML_Bhopal_Logo.png",
+            "websiteUrl": "https://www.commudle.com/communities/ml-bhopal",
             "socialMedia": {
               "twitter": "#",
               "linkedin": "#",
@@ -315,13 +315,24 @@ const websiteData = {
             }
           },
           {
-            "name": "Innovation Hub",
-            "description": "Supporting startups and entrepreneurs in their journey to build innovative solutions.",
-            "logoUrl": "https://via.placeholder.com/150x80/FBBC04/FFFFFF?text=Partner+3",
-            "websiteUrl": "#",
+            "name": "Bhopal DAO",
+            "description": "Building the future of decentralized technology and blockchain innovation in Bhopal through community-driven initiatives.",
+            "logoUrl": "https://www.bhopaldao.xyz/images/logo.png",
+            "websiteUrl": "https://www.bhopaldao.xyz/",
             "socialMedia": {
               "twitter": "#",
               "linkedin": "#",
+              "instagram": "#"
+            }
+          },
+          {
+            "name": "I am Startup",
+            "description": "Empowering entrepreneurs and startups across India with mentorship, resources, and networking opportunities to build successful ventures.",
+            "logoUrl": "https://media.licdn.com/dms/image/v2/D4D03AQFg8LELuH7syg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1686288397402?e=1758153600&v=beta&t=OmKVw-7v6gUP1mUqHflNXZFvCGkiBFUz3oa8fiZFb94",
+            "websiteUrl": "https://www.linkedin.com/in/i-am-startup-community-india/",
+            "socialMedia": {
+              "twitter": "#",
+              "linkedin": "https://www.linkedin.com/in/i-am-startup-community-india/",
               "instagram": "#"
             }
           }

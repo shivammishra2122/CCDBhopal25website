@@ -467,32 +467,6 @@
         guidelinesLink.href = data.conduct.communityGuidelines.link.url;
         guidelinesLink.textContent = data.conduct.communityGuidelines.link.text;
         
-        // Community Partners Section (smaller logos, above venue section)
-        if (data.communityPartners && data.communityPartners.length > 0) {
-          const partnersSection = document.createElement('section');
-          partnersSection.id = 'community-partners';
-          partnersSection.className = 'community-partners-section';
-          partnersSection.innerHTML = `
-            <div class="container mx-auto px-6">
-              <div class="text-center mb-6">
-                <h2 class="text-2xl font-bold mb-2">Community Partners</h2>
-                <p class="text-base max-w-2xl mx-auto">We thank our community partners for their support and collaboration.</p>
-              </div>
-              <div class="flex flex-wrap justify-center items-center gap-4 max-w-5xl mx-auto">
-                ${data.communityPartners.map(partner => `
-                  <a href="${partner.website}" target="_blank" rel="noopener" class="partner-card block p-2">
-                    <img src="${partner.logoUrl}" alt="${partner.name} Logo" class="h-10 w-auto object-contain mx-auto" style="max-width:80px;">
-                    <div class="mt-1 text-center partner-name text-xs font-medium">${partner.name}</div>
-                  </a>
-                `).join('')}
-              </div>
-            </div>
-          `;
-          // Insert above the venue section
-          const venueSection = document.getElementById('venue');
-          venueSection.parentNode.insertBefore(partnersSection, venueSection);
-        }
-        
         // Populate Venue
         document.getElementById('venue-name').textContent = data.event.venue;
         document.getElementById('venue-address').textContent = data.event.venueAddress;
