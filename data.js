@@ -36,6 +36,7 @@ const websiteData = {
     { "text": "Venue", "url": "venue.html" },
     { "text": "Team", "url": "team.html" },
     { "text": "Tickets", "url": "tickets.html" },
+    { "text": "Community Partners", "url": "community-partners.html" },
     { "text": "Call for Sponsors", "url": "call-for-sponsors.html" }
   ],
   "hero": {
@@ -281,6 +282,50 @@ const websiteData = {
         "company": "Student",
         "imageUrl": "https://media.licdn.com/dms/image/v2/D4D03AQGeouOQl3RynQ/profile-displayphoto-shrink_400_400/B4DZU82Fh_GkAk-/0/1740482567625?e=1758153600&v=beta&t=WaMc955WT2jy8JW4mzP-v7jBbeAdHfTgnfr4ttmPrTA",
         "linkedinUrl": "https://www.linkedin.com/in/vanshrathii/"
+      }
+    ]
+  },
+  "communityPartners": {
+    "title": "Community Partners",
+    "subtitle": "Meet our amazing community partners who make Google Cloud Community Day Bhopal 2025 possible through their collaboration and support",
+    "categories": [
+      {
+        "name": "Tech Communities",
+        "partners": [
+          {
+            "name": "Tech Community Partner",
+            "description": "Brief description of the community partner and their focus areas or mission.",
+            "logoUrl": "https://via.placeholder.com/150x80/4285F4/FFFFFF?text=Partner+Logo",
+            "websiteUrl": "#",
+            "socialMedia": {
+              "twitter": "#",
+              "linkedin": "#",
+              "instagram": "#"
+            }
+          },
+          {
+            "name": "Developer Community",
+            "description": "Another amazing community partner working to advance technology and innovation.",
+            "logoUrl": "https://via.placeholder.com/150x80/34A853/FFFFFF?text=Community+2",
+            "websiteUrl": "#",
+            "socialMedia": {
+              "twitter": "#",
+              "linkedin": "#",
+              "github": "#"
+            }
+          },
+          {
+            "name": "Innovation Hub",
+            "description": "Supporting startups and entrepreneurs in their journey to build innovative solutions.",
+            "logoUrl": "https://via.placeholder.com/150x80/FBBC04/FFFFFF?text=Partner+3",
+            "websiteUrl": "#",
+            "socialMedia": {
+              "twitter": "#",
+              "linkedin": "#",
+              "instagram": "#"
+            }
+          }
+        ]
       }
     ]
   }
