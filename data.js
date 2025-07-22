@@ -147,8 +147,63 @@ const websiteData = {
       "name": "I am Startup",
       "logoUrl": "https://media.licdn.com/dms/image/v2/D4D03AQFg8LELuH7syg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1686288397402?e=1758153600&v=beta&t=OmKVw-7v6gUP1mUqHflNXZFvCGkiBFUz3oa8fiZFb94",
       "website": "https://www.linkedin.com/in/i-am-startup-community-india/"
+    },
+    {
+      "name": "GDSC On Campus - MITS Gwalior",
+      "logoUrl": "Community-Partner-Logo/mits.png",
+      "website": "https://www.linkedin.com/company/gdg-on-campus-mits-gwalior/"
+    },
+    {
+      "name": "GDSC On Campus - GGITS",
+      "logoUrl": "Community-Partner-Logo/gyan-ganga.jpg",
+      "website": "https://www.linkedin.com/company/google-developer-groups-ggits/"
+    },
+    {
+      "name": "GDSC On Campus - LNCTS",
+      "logoUrl": "Community-Partner-Logo/lncts.jpg",
+      "website": "https://www.linkedin.com/company/google-developer-students-club-lncts/"
+    },
+    {
+      "name": "GDSC On Campus - LNCTE",
+      "logoUrl": "Community-Partner-Logo/lncte.jpg",
+      "website": "https://www.linkedin.com/company/google-developer-student-club-lncte/"
+    },
+    {
+      "name": "GDSC On Campus - SOIT RGPV",
+      "logoUrl": "Community-Partner-Logo/soit.jpg",
+      "website": "https://www.linkedin.com/company/google-developer-student-clubs-soit-rgpv/"
+    },
+    {
+      "name": "GDSC On Campus - SIRT",
+      "logoUrl": "Community-Partner-Logo/sirt.jpg",
+      "website": "https://www.linkedin.com/company/google-developer-group-sirt/"
+    },
+    {
+      "name": "GDSC On Campus - SISTec",
+      "logoUrl": "Community-Partner-Logo/sistec.jpg",
+      "website": "https://www.linkedin.com/company/gdgsistec/"
+    },
+    {
+      "name": "GDSC On Campus - VIT Bhopal",
+      "logoUrl": "Community-Partner-Logo/vit-bhopal.png",
+      "website": "https://www.linkedin.com/company/gdgcvitbhopal/"
+    },
+    {
+      "name": "GDSC On Campus - OIST",
+      "logoUrl": "Community-Partner-Logo/oist.jpg",
+      "website": "https://www.linkedin.com/company/gdgcvitbhopal/"
+    },
+    {
+      "name": "AIESEC Bhopal",
+      "logoUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQGZ32_VMDIc0w/company-logo_200_200/company-logo_200_200/0/1630503270621/aiesecindia_logo?e=1756339200&v=beta&t=ozHVtqjcSzrfiRzlSIMsmiYKC2D77Iyu_AlmSSizYTQ",
+      "website": "https://www.linkedin.com/company/aiesecindia/ "
+    },
+    {
+      "name": "Techhelp4u",
+      "logoUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQFuZ3VzSOkycg/company-logo_200_200/B4EZgd6ct0HgAQ-/0/1752848518951/techhelp4u_logo?e=1756339200&v=beta&t=gNnjAlkH_hqAgkMyWp3uV2pReNhvP5e8PRCYKAUcJeY",
+      "website": "https://www.linkedin.com/company/techhelp4u/ "
     }
-  ],
+    ],
   "footer": {
     "quickLinks": [
       { "text": "About", "url": "#about" },
